@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hasee.shoppingapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    //储存卡的读取权限
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    //调用相机权限
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon_app"
+        android:supportsRtl="true"
+        android:name="myApplication.MyApplication"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".activity.LoginActivity"></activity>
+        <activity android:name=".activity.RegisterActivity"></activity>
+        <activity android:name=".activity.Register2Activity"></activity>
+        <activity android:name=".activity.AddressPickerActivity"></activity>
+
+    </application>
+
+</manifest>
